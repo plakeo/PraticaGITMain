@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/busca.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Buscar livro</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../JS/API.js"></script>
+</head>
+<body>
+    <header>
+        <a href="página1.html">Voltar</a>
+        <a href="editar.html">Editar Livro</a>
+        <a href="Cadastro-Livro.html">Adicionar Livro</a>
+        <a href="Remover-Livro.html">Remover Livro</a>
+        <a href="login.html">Deslogar</a>
+    </header>
+    <script src="../JS/API.js"></script>
+    <div>
+    <input id="Autores" type="checkbox" onchange="construirTabela()"> Autores
+    <input id="Categorias" type="checkbox" onchange="construirTabela()"> Categorias
+    <input id="Editoras" type="checkbox" onchange="construirTabela()"> Editoras
+    <br>
+    <input type="text" id="abusca" value="" placeholder="Faça sua pesquisa"> 
+    <button onclick="comecabusca()">Procurar</button><br>
+    <table id="tabela-autores">
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+    <br>
+    <table id="tabela-categorias">
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+    <br>
+    <table id="tabela-editoras">
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

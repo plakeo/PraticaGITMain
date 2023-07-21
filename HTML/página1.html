@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style/página1.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Página inicial</title>
+</head>
+<body>
+    <header>
+        <a href="busca.html">Buscar</a>
+        <a href="editar.html">Editar Livro</a>
+        <a href="Cadastro-Livro.html">Adicionar Livro</a>
+        <a href="Remover-Livro.html">Remover Livro</a>
+        <a href="login.html">Deslogar</a>
+    </header>
+
+    <script>
+        const jsonString = window.localStorage.getItem("json_data")
+        console.log(jsonString);
+    </script>
+<h2>Livros cadastrados</h2>
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>ISBN</th>
+            <th>Autores</th>
+            <th>Editora</th>
+            <th>Categoria</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td id="TLX">xxx</td>
+            <td id="ILX">xxx</td>
+            <td id="ALX">xxx</td>
+            <td id="ELX">xxx</td>
+            <td id="CLX">xxx</td>
+            <td id="QLX">xxx</td>
+            <td id="PLX">xxx</td>
+        </tr>
+    </table>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../JS/API.js"></script>
+</body>
+</html>

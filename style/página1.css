@@ -1,0 +1,39 @@
+*{
+    font-family: 'montserrat', 'trebuchet ms';
+    color: whitesmoke;
+}
+
+header{
+    margin: 35px 0 0 0;
+}
+
+header a{
+    text-decoration: none;
+    background-color: rgb(21, 16, 29);
+    border-radius: 25px;
+    margin: 10px;
+    padding: 15px;
+}
+
+header a:hover{
+    font-weight: bold;
+    background-color: rgb(44, 33, 59);
+}
+
+body{
+    margin: 0;
+    background-color: rgb(31, 24, 42);
+    text-align: center;
+}
+
+body h2{
+    margin: 90px 555px 10px 0;
+}
+
+body table{
+    display: inline-block;
+    border-collapse: separate;
+    border-spacing: 50px 5px;
+    background-color: rgb(25, 20, 34);
+    border-radius: 5px;
+}
